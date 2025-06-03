@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Chocolate Mousse Recipe</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+      <div class="logo">
+        <a href="">My Recipe Book</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="about.html">About me</a></li>
+          <li><a href="breakfast.html">Breakfast</a></li>
+          <li><a href="main.html">Main Dishes</a></li>
+          <li><a href="desserts.html">Desserts</a></li>
+        </ul>
+      </nav>
+      <div class="search">
+        <input type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </div>
+    </header>
+  
+    <div class="recipe-container">
+      <div class="recipe-image">
+        <img src="img/chocolate-mousse.jpg" alt="Chocolate Mousse">
+      </div>
+      <div class="recipe-details">
+        <h1>Classic Chocolate Mousse Recipe</h1>
+        <h3>Ingredients:</h3>
+        <ul>
+          <li>4 large egg yolks</li>
+          <li>¼ cup sugar</li>
+          <li>2 ½ cups heavy whipping cream</li>
+          <li>8 ounces semisweet baking chocolate, chopped</li>
+        </ul>
+        <h3>Instructions:</h3>
+        <ol>
+          <li>Beat egg yolks in a small bowl with an electric mixer on high speed for about 3 minutes until thick and lemon-colored.</li>
+          <li>Gradually beat in sugar.</li>
+          <li>Heat 1 cup of whipping cream in a saucepan over medium heat until hot.</li>
+          <li>Slowly stir at least half of the hot cream into the egg yolk mixture, then return everything to the saucepan.</li>
+          <li>Cook over low heat, stirring constantly, until the mixture thickens (do not boil).</li>
+          <li>Stir in chopped chocolate until melted, then refrigerate for about 2 hours, stirring occasionally.</li>
+          <li>Beat the remaining 1 ½ cups of whipping cream until stiff peaks form.</li>
+          <li>Fold whipped cream into the chocolate mixture.</li>
+          <li>Pipe or spoon into serving bowls and refrigerate
