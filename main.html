@@ -8,14 +8,14 @@
 <body>
     <header>
   <div class="logo">
-  <a href="">My recepie Book</a>
+  <a href="">My recipe Book</a>
   </div>
   <nav>
   <ul>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="about.html">About us</a></li>
+  <li><a href="">Home</a></li>
+  <li><a href="about.html">About me</a></li>
   <li><a href="breakfast.html">Breakfast</a></li>
-  <li><a href="">Main dishes</a></li>
+  <li><a href="main.html">Main dishes</a></li>
   <li><a href="desserts.html">Desserts</a></li>
   </ul>
   </nav>
@@ -24,3 +24,142 @@
   <button type="submit">Search</button>
   </div>
 </header>
+<div class="slideshow">
+	<div class="container">
+	<div class="big_img_slideshow">
+	  <div class="mySlides">
+		<div class="numbertext">1 / 6</div>
+		<img src="img/caramel_chicken.jpg" style="width:100%">
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">2 / 6</div>
+		<a href="lasagne.html"><img src="img/lasagne.jpg" style="width:100%"></a>
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">3 / 6</div>
+		<a href="chicken_tikka_masala.html"><img src="img/tikkamasala.jpg" style="width:100%"></a>
+	  </div>
+		
+	  <div class="mySlides">
+		<div class="numbertext">4 / 6</div>
+		<a href="macaronie_cheese.html"><img src="img/macaronie_cheese.jpg" style="width:100%"></a>
+	  </div>
+
+	  <div class="mySlides">
+		<div class="numbertext">5 / 6</div>
+		<a href="burger.html"><img src="img/burger.webp" style="width:100%"></a>
+	  </div>
+		
+	  <div class="mySlides">
+		<div class="numbertext">6 / 6</div>
+		<a href="alfredo_pasta.html"><img src="img/alfredo_pasta.jpg" style="width:100%"></a>
+	  </div>
+		
+	  <a class="prev" onclick="plusSlides(-1)">❮</a>
+	  <a class="next" onclick="plusSlides(1)">❯</a>
+
+	  <div class="caption-container">
+		<p id="caption"></p>
+	  </div>
+	</div>
+
+	  <div class="row">
+		<div class="column">
+		  <img class="demo cursor" src="img/caramel_chicken.jpg" style="width:100%" onclick="currentSlide(1)" alt="Caramel Chicken">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/lasagne.jpg" style="width:100%" onclick="currentSlide(2)" alt="Lasagne">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/tikkamasala.jpg" style="width:100%" onclick="currentSlide(3)" alt="Chicken Tikka Masala">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/macaronie_cheese.jpg" style="width:100%" onclick="currentSlide(4)" alt="Macaronie and cheese">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="img/burger.webp" style="width:100%" onclick="currentSlide(5)" alt="Burger">
+		</div>    
+		<div class="column">
+		  <img class="demo cursor" src="img/alfredo_pasta.jpg" style="width:100%" onclick="currentSlide(6)" alt="Alfredo pasta">
+		</div>
+	  </div>
+	</div>
+	<div class="image_anim">
+		<div class="wrapper">
+        <div class="boxImg">
+            <img src="img/meat.jpg" alt="photo">
+            <div class="container2">
+                <div class="text2">
+                    <h1>Meat</h1>
+                    <p>Dive into a diverse array of meat recipes, from succulent steaks and tender roasts to flavorful dishes like chili con carne. Perfect your culinary skills and impress with every bite. </p>
+                    <a href="meat.html" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxImg">
+            <img src="img/fish.jpg" alt="photo">
+            <div class="container2">
+                <div class="text2">
+                    <h1>Fish</h1>
+                    <p>Discover a variety of fish recipes, from delicate fillets to hearty stews. Elevate your cooking skills and savor the fresh flavors of the sea.</p>
+                    <a href="fish.html" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxImg">
+            <img src="img/pasta.jpg" alt="photo">
+            <div class="container2">
+                <div class="text2">
+                    <h1>Pasta</h1>
+                    <p>Savor a range of pasta recipes, from classic Italian dishes to innovative creations. Elevate your pasta-making skills with every dish. </p>
+                    <a href="pasta.html" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+        <div class="boxImg">
+            <img src="img/green_veg_pasta.jpg" alt="photo">
+            <div class="container2">
+                <div class="text2">
+                    <h1>Vegetarian</h1>
+                    <p>Enjoy the flavors of vegetarian cuisine with our tasty and nutritious recipes! From fresh salads to hearty mains, we've got you covered. Dive into plant-based goodness! </p>
+                    <a href="vegetarian.html" class="btn">more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+	</div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("demo");
+  let captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+</body>
+</html>
