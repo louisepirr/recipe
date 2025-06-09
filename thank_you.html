@@ -5,6 +5,81 @@
   <title>Thank You - My Recipe Book</title>
   <!-- Link to your main stylesheet if desired. If most styles are shared, you can include them here. -->
   <link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    /* Basic reset and typography */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fdd2cd;
+
+    }
+
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    
+    nav ul li {
+      margin-left: 20px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    nav ul li a:hover {
+      color: #ccc;
+    }
+    
+    /* Thank You message section */
+    .thank-you-section {
+      padding: 80px 20px;
+      text-align: center;
+      background-image: url('img/thankyou-bg.jpg'); /* Optional background image */
+      background-size: cover;
+      background-position: center;
+      color: #a85349;
+      min-height: 400px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .thank-you-section h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      text-shadow: 1px 1px 5px #f79489;
+    }
+    
+    .thank-you-section p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+    }
+    
+    .back-button {
+      background-color: #f79489;
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 30px;
+      font-size: 1rem;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+    
+    .back-button:hover {
+      background-color: #fbada4;
+      transform: scale(1.05);
+    }
+
+  </style>
 </head>
 <body>
   <header>
@@ -27,6 +102,6 @@
     <p>We have received your message. Our team will get back to you as soon as possible.</p>
     <a href="index.html" class="back-button">Back to Home</a>
   </section>
-  
+
 </body>
 </html>
