@@ -138,21 +138,36 @@ nav ul li a:hover{
  
 }
 .slideshow {
-  font-family: Arial;
-  margin: 0;
-  box-sizing: border-box;
-  width: 500px;
+    display: flex;
+    gap: 20px; /* Optional spacing between sections */
+    max-width: 1000px;}
+
+
+/* Left column – slideshow */
+.slideshow .container {
+    flex: 2;  /* adjust as needed; here 2 parts */
 }
 
-.slideshow img {
-  vertical-align: middle;
+/* Right column – animated images */
+.slideshow .image_anim {
+    flex: 1;  /* here 1 part, yielding roughly 70/30 ratio */
 }
-.big_img_slideshow img{
-	  height: 400px;
+.image_anim .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  /* two equal-width columns */
+    gap: 20px;  /* adjust spacing between blocks as needed */
 }
-.slideshow .row img{
-	height: 100px;
+
+/* Update boxImg styles for grid */
+.boxImg {
+    width: 100%;     /* now fill the grid cell's width */
+    height: 280px;
+    overflow: hidden;
+    position: relative;
+    /* Remove float: left; */
+    margin: 0;       /* Adjust margin if you want extra spacing */
 }
+
 /* Position the image container (needed to position the left and right arrows) */
 .container {
   position: relative;
