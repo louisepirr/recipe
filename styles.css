@@ -143,7 +143,10 @@ nav ul li a:hover{
 .slideshow {
     display: flex;
     gap: 20px;
-    max-width: 1000px;
+    
+}
+.container{
+    max-width: 500px;
 }
 
 /* Left column – the main slideshow */
@@ -229,10 +232,16 @@ nav ul li a:hover{
     display: table;
     clear: both;
 }
-.column {
-    float: left;
-    width: 16.66%;
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
+.column {
+
+    width: 200px;
+}
+.column img { height: 100%; width: 100%; } 
 
 /* Set opacity for thumbnails */
 .demo {
@@ -428,11 +437,6 @@ a.btn:active {
   cursor: pointer;
 }
 
-input3[type=submit]:hover {
-  background-color: #45a049;
-}
-
-
 form {
   border: 3px solid #f1f1f1;
   font-family: Arial;
@@ -496,12 +500,17 @@ form {
 /*gallery*/
 .imgcolumn{
 	  float: left;
-width: 16.66%;}
+width: 16.66%;
+height: 300px;
+padding-bottom: 50px;}
 .imggal{
-	height:300px;
+	height: 100%;
+    object-fit: cover;
 }
 .imgcolumn a p{
 	text-decoration: none;
 	color: black;
 
 }
+a{text-decoration: none;
+color: black;}
