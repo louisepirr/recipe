@@ -510,7 +510,7 @@ padding-bottom: 50px;}
 }
 a{text-decoration: none;
 color: black;}
-.row {
+.row1{
     display: flex;
     flex-direction: row; /* Ensures images are in a row */
     justify-content: center; /* Adjust alignment */
