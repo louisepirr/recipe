@@ -232,11 +232,7 @@ nav ul li a:hover{
     display: table;
     clear: both;
 }
-.row{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
+
 .column {
 
     width: 200px;
