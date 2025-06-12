@@ -234,7 +234,7 @@ nav ul li a:hover{
 }
 
 .column {
-
+   padding-bottom: 50px;
     width: 200px;
 }
 .column img { height: 100%; width: 100%; } 
