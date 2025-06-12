@@ -510,3 +510,9 @@ padding-bottom: 50px;}
 }
 a{text-decoration: none;
 color: black;}
+.row {
+    display: flex;
+    flex-direction: row; /* Ensures images are in a row */
+    justify-content: center; /* Adjust alignment */
+    gap: 10px; /* Adds spacing */
+}
